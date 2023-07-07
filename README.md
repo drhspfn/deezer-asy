@@ -20,7 +20,7 @@ It must be called when you start your application, in `on_startup` in your bot, 
 
 ## Installation
 ```bash
-pip install deezer-asy
+pip install pydeezer-asy
 ```
 
 ## Usage as a package
