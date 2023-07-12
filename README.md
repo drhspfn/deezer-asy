@@ -18,12 +18,16 @@ It must be called when you start your application, in `on_startup` in your bot, 
 * Getting information about albums, tracks (their tags).
 * Downloading tracks.
 
-## Installation
+
+# What needs to be done
+* Adding tags to .flac. `(So ​​far, idling)`
+
+# Installation
 ```bash
 pip install pydeezer-asy
 ```
 
-## Usage as a package
+# Usage as a package
 
 ```python
 from deezer_asy import DeezerAsy
