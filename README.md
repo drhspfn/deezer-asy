@@ -6,9 +6,11 @@ At the moment, the functionality does not completely repeat the original library
 This version is asynchronous. Otherwise, it repeats the arguments of the original library.
 
 
-# Last update `2.0.0`
-    * Simplified module initialization
-    * Changed response type of `download_track` function: {'track': path, 'lyric': path or None}
+# Last update `2.2.2`
+ * Simplified module initialization
+ * Changed response type of `download_track` function: `{'track': path, 'lyric': path or None}`
+ * Added `httpx` support to replace `aiohttp`. Specify during initialization: `DeezerAsy(ARL, _httpx=True)`
+ * Minor changes regarding cookies `(Not sure but queries should work in both cases)`
     
 
 
@@ -44,8 +46,8 @@ ARL = "edit this"
 async def main():
     # You can pass `loop` as an argument, or leave None
     # If you want logging, pass the `logger` as an argument
-    deezer = DeezerAsy(ARL, loop=loop, logger=logger)
-    await deezer._generate_main_session()
+    # _httpx / Use for httpx requests. Useful when using webhhok in aiogram etc
+    deezer = DeezerAsy(ARL, loop=loop, logger=logger, _httpx=False)
     track = await deezer.get_track(1421388612, True)
     data = await deezer.download_track(track['info'], './', with_lyrics=True, with_metadata=True)
     print(data)
