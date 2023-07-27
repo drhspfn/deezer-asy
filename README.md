@@ -49,8 +49,6 @@ async def main():
     track = await deezer.get_track(1421388612, True)
     data = await deezer.download_track(track['info'], './', with_lyrics=True, with_metadata=True)
     print(data)
-    # p.s Changed response type of `download_track` function: {'track': path, 'lyric': path or None}
-
 
 
 if __name__ == "__main__":
