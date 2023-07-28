@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
 ### Usage aioDeezer
 ```python
-from deezer_asy import DeezerAsy
+from deezer_asy import aioDeezer
 import logging
 import asyncio
 
