@@ -12,7 +12,7 @@ This version is asynchronous. Otherwise, it repeats the arguments of the origina
  * Added `httpx` support to replace `aiohttp`*. Specify during initialization: `DeezerAsy(ARL, _httpx=True)`
  * Minor changes regarding cookies `(Not sure but queries should work in both cases)`
  * Fixed tags (load cover)
- * The module has two versions. Changes in both deal with bugs with `aiohttp`. [More]()
+ * The module has two versions. Changes in both deal with bugs with `aiohttp`. [More](https://github.com/drhspfn/deezer-asy/blob/main/README.md#usage)
 
 
 # What works?
